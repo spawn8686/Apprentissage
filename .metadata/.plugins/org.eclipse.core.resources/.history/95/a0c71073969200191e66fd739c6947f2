@@ -1,0 +1,68 @@
+package com.sdz.animal;
+
+abstract class Animal // Classe Abstraite mère
+{
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//										VARIABLES
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		protected int poids = 0;
+		protected String couleur = "";
+		
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//										METHODES
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//Défini
+		protected void manger()
+		{
+			System.out.println("Je mange de la viande");
+		}
+		protected void boire()
+		{
+			System.out.println("Je bois de l'eau");
+		}
+		public String toString()
+		{
+			String str = "Je suis un objet de la \'"+this.getClass()+
+					"\' de couleur \'"+this.couleur+
+					"\' et pèse \'"+this.poids+" kg\'";
+			
+			return str;
+		}
+		
+		//Abstraite
+		abstract void deplacement();
+		abstract void crier();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+package openClassRoom;
+
+import java.util.Scanner;
+
+public class Boucles {
+
+	public static void main(String[] args) 
+	{
+		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//  lien de l'exercice "https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/20841-apprenez-a-creer-des-boucles"
+		//  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		/*
+		 * Création des variables et objet nécessaires à l'exercice
+		 * Création et utilisation d'une boucle "while"
+		 * la condition est en premier tester, puis, si le résultat est true, on exécute la boucle
+		 * La boucle ce poursuit temps que la condition while est true (testé avant chaque nouvelle boucle)
+		 * */
+		Scanner scan = new Scanner(System.in);
+		String prenom;
+		char boucle = 'o';		
+		int a = 1, b = 10;
+		
+		while(a <= b)
+		{
+			System.out.println("a = "+a);
+			a = a+2;
+		}
+		System.out.println("\n\n\n");
+		
+		while (boucle == 'o') 
+		{
+			System.out.println("Donner un nom : ");
+			prenom = scan.nextLine();
+			System.out.println("Bonjour "+prenom);
+			boucle = ' ';
+			while (boucle !='o' && boucle != 'n') 
+			{
+				System.out.println("Veux-tu continuer : (o/n)");
+				boucle = scan.nextLine().charAt(0);
+			}	
+			if(boucle == 'n')
+				System.out.println("Au revoire "+prenom+"!\n\n\n");	
+		}			
+	}
+}

@@ -1,0 +1,73 @@
+package openClassRoom;
+
+import java.util.Scanner;
+
+public class Tableaux {
+
+	public static void main(String[] args) 
+	{
+		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//  lien de l'exercice "https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/20998-creez-des-tableaux"
+		//  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		/*
+		 * Création de différents types de variables tableaux
+		 * */
+		int valueEntier[] = {0,1,2,3,4,5,6,7,8,9};
+		double valueDouble[] = {0.0,1.0,2.0,3.0,4.0};
+		char valueChar[] = {'a','b','c','d','e','f','g','h'};
+		String valueString[] = {"mot1","mot2","mot3","mot4"};
+		
+		/*
+		 * Tableau multidimensionnels
+		 * */
+		int valueIntMulti[][] = {{0,2,4,6,8},{1,3,5,7,9}};
+		
+		/*
+		 * Affichage des données d'une tableau grace à l'instruction length
+		 * */
+		int entier[] = {1,2,3,4,5,6,7,8,9,0};
+		
+		for(int b = 0 ; b < entier.length ; b++)
+			System.out.println("la valeur de i["+b+"] = "+entier[b]);
+		
+		/*
+		 * Effectuer une recherche dans un tableau simple de type char
+		 * Ici, le candidat doit indiquer une lettre au hasard
+		 * puis, on devra déterminer si cette lettre est présente dans le tableau et à quelle position
+		 * */
+		Scanner scan = new Scanner(System.in);		
+		char boucle = ' ';
+		char value =' ';		
+		
+		do
+		{
+			int j = 0;
+			// récupération du caractère aléatoire
+			System.out.println("Indiquez une lettre minuscule, SVP :");
+			value = scan.nextLine().charAt(0);
+			
+			// Analyse si le caractère existe et à quelle position
+			while(j < valueChar.length && value != valueChar[j])
+				j++;
+			
+			// si le caractère existe
+			if (j < valueChar.length) 
+			{
+				System.out.println("le caractère '"+value+"' choisi existe à la position valueChar["+j+"]!");
+			}else // sinon
+				System.out.println("le caractère '"+value+"' n'existe pas dans le tableau!");
+			
+			// le candidat veut-il essayer de nouveau
+			do
+			{
+				System.out.println("Voulez-vous essayer de nouveau?  (o/n)");
+				boucle = scan.nextLine().charAt(0);
+			}while(boucle != 'o' && boucle != 'n'); // s'assurer que la réponse soit gérer
+			
+			if(boucle == 'n')
+				System.out.println("Merci et bonne journée!");
+				
+		}while(boucle == 'o');		
+		
+	}
+}

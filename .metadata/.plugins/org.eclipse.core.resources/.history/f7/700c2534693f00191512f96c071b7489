@@ -1,0 +1,24 @@
+package openClassRoom;
+
+import java.util.Scanner;
+
+public class Boucles {
+
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		String str = "true";
+		char suite = 'o';
+		
+		while (suite == 'o') 
+		{
+			System.out.println("Donner un nom : ");
+			str = scan.nextLine();
+			System.out.println("Bonjour "+str);
+			System.out.println("Veux-tu continuer : (o/n)");
+			suite = scan.nextLine().charAt(0);
+		}
+		System.out.println("Aurevoire "+str);
+	}
+
+}

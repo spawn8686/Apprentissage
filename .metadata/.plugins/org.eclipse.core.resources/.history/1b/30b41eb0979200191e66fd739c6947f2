@@ -1,0 +1,52 @@
+package com.sdz.animal;
+
+public class Test 
+{
+	public static void main(String[] args) 
+	{
+		//création d'un loup
+	    Loup lo = new Loup("Gris bleuté", 20);
+	    lo.boire();
+	    lo.manger();
+	    lo.deplacement();
+	    lo.crier();
+	    System.out.println(lo.toString());
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

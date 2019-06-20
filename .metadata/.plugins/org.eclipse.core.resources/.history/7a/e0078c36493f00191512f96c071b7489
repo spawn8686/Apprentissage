@@ -1,0 +1,29 @@
+package openClassRoom;
+
+import java.util.Scanner;
+
+public class Conditions 
+{
+	public static void main(String[] args) 
+	{
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		// lien de l'exercice "https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/20757-definissez-des-conditions"
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		/*
+		 * */
+		int i = -5;
+		if (i<0) 
+		{
+			System.out.println("La valeur est négative!");
+		} else 
+		{
+			if (i==0) 
+			{
+				System.out.println("La valeur est null!");
+			} else 
+			{
+				System.out.println("La valeur est positive!");
+			}			
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package openClassRoom_2;
+
+public class Ville 
+{
+	String nomVille;
+	String nomPays;
+	int nbreHabitants;
+	
+	// Constructeur de la class Ville
+	public Ville()
+	{
+		System.out.println("Création d'une nouvelle ville !");
+		nomVille = "Inconnu";
+		nomPays = "Inconnu";
+		nbreHabitants = 0;
+	}
+}

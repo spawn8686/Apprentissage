@@ -1,0 +1,14 @@
+package com.sdz.animal;
+
+public abstract class Felin extends Animal // classe abstraite fille de Animal
+{
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	//										METHODES
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	//Défini
+	@Override
+	void deplacement() 
+	{
+		System.out.println("Je me déplace seul !");
+	}
+}

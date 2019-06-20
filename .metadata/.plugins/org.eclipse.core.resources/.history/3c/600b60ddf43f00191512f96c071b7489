@@ -1,0 +1,24 @@
+package openClassRoom;
+
+import java.util.Scanner;
+
+public class ExerciceConvertion {
+
+	public static void main(String[] args) 
+	{
+		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//  lien de l'exercice "https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java/20903-tp-convertissez-des-celsius-en-fahrenheit"
+		//  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		/*
+		 * Exercice de conversion de température
+		 * de Farenheit à Celsius
+		 * de Celsius à Farenheit
+		 * */
+		Scanner scan = new Scanner(System.in);
+	}
+	
+	public static double arrondi(double A, int B) 
+	{
+		return (double) ( (int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
+	}
+}
