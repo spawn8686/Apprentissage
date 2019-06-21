@@ -19,6 +19,8 @@ abstract class Animal // Classe Abstraite mère
 		{
 			this.couleur = couleur;
 			this.poids = poids;
+			System.out.println("Création d'un nouveau "+this.getClass().getSimpleName()+" "
+								+this.couleur+" de "+this.poids+" kg !");
 		}
 		
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
