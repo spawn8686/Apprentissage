@@ -10,11 +10,12 @@ public class Test
 	    lo.manger();
 	    lo.deplacement();
 	    lo.crier();
-	    System.out.println(lo.toString());
+	    System.out.println(lo.toString()+"\n\n");
 	    
 	    //création d'un tigre
 	    Animal ti = new Tigre();
-	    System.out.println(ti.toString());
+	    ti.crier();
+	    System.out.println(ti.toString()+"\n\n");
 	    
 	    //création d'un chat
 	    Animal ch = new Chat();

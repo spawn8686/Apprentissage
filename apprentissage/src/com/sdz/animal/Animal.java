@@ -39,11 +39,11 @@ abstract class Animal // Classe Abstraite mère
 			
 			if (this.couleur.isEmpty()) 
 			{
-				str = "Je suis un objet de la \'"+this.getClass()+
+				str = "Je suis un objet de la class \'"+this.getClass().getSimpleName()+
 						"\', mais on ne connait ni ma couleur, ni mon poids !";
 			}else
 			{
-			str = "Je suis un objet de la \'"+this.getClass()+
+			str = "Je suis un objet de la class \'"+this.getClass().getSimpleName()+
 					"\' de couleur \'"+this.couleur+
 					"\' et pèse \'"+this.poids+" kg\'";
 			}
