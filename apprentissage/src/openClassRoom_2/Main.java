@@ -117,7 +117,8 @@ public class Main
 		//et le reste, des capitales
 		for(int i = 0; i < 6; i++)
 		{
-		  if (i <3){
+		  if (i <3)
+		  {
 		    Ville V = new Ville(tab[i], "France", tab2[i]);
 		    tableau[i] = V;
 		  }else
@@ -131,7 +132,37 @@ public class Main
 		{
 			//Les 2 System.out.println ci dessous produiront le même résultat.
 		  System.out.println(obj.toString());
-		  System.out.println(obj);
+		}
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//									TABLEAU DE VILLES SUISSE
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//Exercice créé pour le cours OpenClassRooms sur GitHub
+		Ville[] tVilles = new Ville[6];
+	        
+		//Définition d'un tableau de noms de villes et un autre de nombres d'habitants
+		String[] tab4 = {"Monthey", "Martigny", "Sion", "Bern", "Zurich", "Bâle"};
+		int[] tab5 = {16302, 15635, 29304, 133115, 1488000, 171017};
+		String[] tab6 = {"Le Grauholz", "Le Fraumünster", "l'Helvetia auf Reisen"};
+		         
+		//Les trois premiers éléments du tableau seront des villes,
+		//et le reste, des capitales
+		for(int i = 0; i < 6; i++)
+		{
+		  if (i <3)
+		  {
+		    Ville V = new Ville(tab4[i], "Suisse", tab5[i]);
+		    tVilles[i] = V;
+		  }else
+		  {
+		    Capitale C = new Capitale(tab4[i], "Suisse", tab5[i], tab6[i-3]);
+		    tVilles[i] = C;
+		  }
+		}		                 
+		//Il ne nous reste plus qu'à décrire tout notre tableau !
+		for(Object obj2 : tVilles)
+		{
+			//Les 2 System.out.println ci dessous produiront le même résultat.
+		  System.out.println(obj2.toString());
 		}
 	}
 }
