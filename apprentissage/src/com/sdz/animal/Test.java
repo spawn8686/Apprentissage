@@ -1,13 +1,17 @@
 package com.sdz.animal;
 
+import exercices.Titre;
+
 public class Test 
 {
 	public static void main(String[] args) 
 	{
+		Titre titre = new Titre();
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		//							UTILSATIONS DES METHODES ABSTRAITES
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		//création d'un loup
+		titre.titre("UTILSATIONS DES METHODES ABSTRAITES"); // ----TITRE----
 	    Animal lo = new Loup("Gris bleuté", 20);
 	    lo.boire();
 	    lo.manger();
@@ -27,14 +31,37 @@ public class Test
 		//							UTILSATIONS DES METHODES INTERFACES
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	    //Création d'un chien
-	    System.out.println("\n\n-------------------------------------------------------------");
-	    System.out.println("\tUTILSATIONS DES METHODES INTERFACES");
-	    System.out.println("-------------------------------------------------------------");
+		titre.titre("UTILSATIONS DES METHODES INTERFACES");// ----TITRE----
 	    Chien chi = new Chien("Beige", 15);
 	    System.out.println(chi); 	//Méthode de la class Animal
 	    chi.faireLeBeau();			//Méthode abstraite de la class Rintintin (Polymorphisme défini dans la class Chien)
 	    chi.faireCalin();			//Méthode abstraite de la class Rintintin (Polymorphisme défini dans la class Chien)
 	    chi.faireLechouille();		//Méthode abstraite de la class Rintintin (Polymorphisme défini dans la class Chien)
+	    
+		titre.titre("TEST INTERFACES ET POLYMORPHISME");// ----TITRE----
+	    
+	    //Les méthodes d'un chien 
+	    Chien c = new Chien("Gris bleuté", 20);
+	    c.boire();
+	    c.manger();
+	    c.deplacement();
+	    c.crier();
+	    System.out.println(c.toString());
+				
+	    System.out.println("--------------------------------------------");
+	    //Les méthodes de l'interface
+	    c.faireCalin();
+	    c.faireLeBeau();
+	    c.faireLechouille();
+			
+	    System.out.println("--------------------------------------------");
+	    //Utilisons le polymorphisme de notre interface
+	    Rintintin r = new Chien();
+	    r.faireLeBeau();
+	    r.faireCalin();
+	    r.faireLechouille();
+	    
+		titre.titre("DESIGN PATTERN");// ----TITRE----
 	}
 }
 
