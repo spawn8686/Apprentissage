@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;
+	<refactoring comment="Delete resource &apos;apprentissage&apos;" deleteContents="false" description="Delete resource &apos;apprentissage&apos;" element1="/apprentissage" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561356051579"/>&#x0A;
+
+	<refactoring comment="Delete resource &apos;ICH226&apos;" deleteContents="false" description="Delete resource &apos;ICH226&apos;" element1="/ICH226" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561356056536"/>&#x0A;
+
+	<refactoring comment="Delete resource &apos;M120&apos;" deleteContents="false" description="Delete resource &apos;M120&apos;" element1="/M120" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561356060699"/>&#x0A;
+
+	<refactoring comment="Delete resource &apos;apprentissage&apos;" deleteContents="false" description="Delete resource &apos;apprentissage&apos;" element1="/apprentissage" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561374010797"/>&#x0A;
+
+	<refactoring comment="Delete resource &apos;ICH226&apos;" deleteContents="false" description="Delete resource &apos;ICH226&apos;" element1="/ICH226" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561374021607"/>&#x0A;
+	
+	<refactoring comment="Delete resource &apos;M120&apos;" deleteContents="false" description="Delete resource &apos;M120&apos;" element1="/M120" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561374025110"/>
+</session>
