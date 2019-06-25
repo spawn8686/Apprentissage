@@ -2,6 +2,7 @@ package openClassRoom_1;
 
 public class Methodes {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

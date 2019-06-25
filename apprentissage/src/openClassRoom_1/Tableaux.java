@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Tableaux {
 
+	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) 
 	{
 		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -4,8 +4,13 @@ import exercices.Titre;
 
 public class Test {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//									PROJET ARMY AVEC CLASS ABSTRAITE
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
 		Titre titre = new Titre();
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		//										TESTS DES CONSTRUCTEURS
@@ -48,10 +53,10 @@ public class Test {
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		titre.titre("TESTS DES METHODES AVEC VARIABLES D'INSTANCES");
 		Personnage[] tpers2 = {new Civil(1,1), new Sniper(6,3), new Guerrier(4,5), new Medecin(3,2), new Chirurgien(2,1)};
-		 String[] tarmes = {"pistolet", "pistolet", "couteau", "pompe", "couteau"}; 
+		 String[] tarmes = {"couteau", "pompe", "pistolet", "pistolet", "couteau"}; 
 
 		  for(int i = 0; i < tpers.length; i++){
-		    System.out.println("\nJe suis un " + tpers[i].getClass().getName());
+		    System.out.println("\nJe suis un " + tpers[i].getClass().getSimpleName());
 		    System.out.println("*****************************************");
 		    tpers2[i].combattre();
 		    tpers2[i].setArmes(tarmes[i]);
