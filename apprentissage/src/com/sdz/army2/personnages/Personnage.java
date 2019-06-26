@@ -3,12 +3,8 @@ package com.sdz.army2.personnages;
 import com.sdz.army2.interfaces.*;
 import com.sdz.army2.comportements.*;
 
-public abstract class Personnage 
+public abstract class Personnage // CLASS ABSTRAITE
 {
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	//									CLASS ABSTRAITE
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	// 							INSTANCES DE COMPORTEMENTS
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,10 +43,75 @@ public abstract class Personnage
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	// 									SETTER
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	public void setEspritCombatif(EspritCombatif esprit)
+	{
+		this.espritCombatif = esprit;
+	}
+	public void setDeplacement(Deplacement dep)
+	{
+		this.deplacement = dep;
+	}
+	public void setSoin(Soin soin)
+	{
+		this.soin = soin;
+	}
 	
-	
-	
-	
-	
-	
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	// 									METHODES
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	public void combattre()
+	{
+		espritCombatif.combat();
+	}
+	public void seDeplacer()
+	{
+		deplacement.deplace();
+	}
+	public void soigner()
+	{
+		soin.soigne();
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
