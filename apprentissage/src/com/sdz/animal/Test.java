@@ -4,6 +4,7 @@ import exercices.Titre;
 
 public class Test 
 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		Titre titre = new Titre();
@@ -60,6 +61,7 @@ public class Test
 	    r.faireLeBeau();
 	    r.faireCalin();
 	    r.faireLechouille();
+	    // r.crier(); // la méthode crier(), ne peut être appelé ainsi, vu que nous avons ici l'interface rintintin qui ne contient pas cette méthode
 	    
 		titre.titre("DESIGN PATTERN");// ----TITRE----
 	}

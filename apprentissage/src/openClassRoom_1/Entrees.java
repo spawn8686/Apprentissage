@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Entrees 
 {
 
+	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) 
 	{		
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

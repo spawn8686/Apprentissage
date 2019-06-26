@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Boucles {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) 
 	{
 		//	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

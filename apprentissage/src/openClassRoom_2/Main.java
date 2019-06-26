@@ -3,6 +3,7 @@ package openClassRoom_2;
 public class Main 
 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		//Instanciation de la class Ville avec constructeur par defaut

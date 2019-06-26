@@ -2,6 +2,7 @@ package openClassRoom_1;
 
 public class Conditions 
 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

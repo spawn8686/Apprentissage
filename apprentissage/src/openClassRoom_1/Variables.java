@@ -54,7 +54,7 @@ public class Variables
 		 * */
 		int a = 12;
 		String j = new String();
-		j = j.valueOf(a);
+		j = String.valueOf(a);
 		System.out.println("'a' a été casté en texte dans 'j' = "+j);
 		
 		/*
@@ -64,7 +64,7 @@ public class Variables
 		* */
 		int b = 12;
 		String s = new String();
-		s = s.valueOf(b);
+		s = String.valueOf(b);
 		int k = Integer.valueOf(s).intValue();
 		System.out.println("'b' a été casté en texte dans 's' = "+s+", puis nouveau cast en int dans 'k' = "+k);		
 	}
