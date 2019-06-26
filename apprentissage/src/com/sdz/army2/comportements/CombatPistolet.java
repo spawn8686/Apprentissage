@@ -13,5 +13,4 @@ public class CombatPistolet implements EspritCombatif
 	{
 		System.out.println("Je combat au pistolet!!!");
 	}
-
 }

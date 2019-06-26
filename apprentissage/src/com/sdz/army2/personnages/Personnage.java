@@ -27,17 +27,20 @@ public abstract class Personnage // CLASS ABSTRAITE
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	// 									GETTER
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	public EspritCombatif getEspritCombatif()
+	public String  getEspritCombatif()
 	{
-		return this.espritCombatif;
+		String str = this.espritCombatif.getClass().getSimpleName();
+		return str;
 	}
-	public Deplacement getDeplacement()
+	public String getDeplacement()
 	{
-		return this.deplacement;
+		String str = this.deplacement.getClass().getSimpleName();
+		return str;
 	}
-	public Soin getSoin()
+	public String getSoin()
 	{
-		return this.soin;
+		String str = this.soin.getClass().getSimpleName();
+		return str;
 	}
 	
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,6 +73,15 @@ public abstract class Personnage // CLASS ABSTRAITE
 	public void soigner()
 	{
 		soin.soigne();
+	}
+	public String toString()
+	{
+		String str = "\nJe suis un "+this.getClass().getSimpleName()+
+				"\n***************************************************"+
+				"\nCombat = "+this.getEspritCombatif()+
+				"\nDeplacement = "+this.getDeplacement()+
+				"\nSoin = "+this.getSoin();
+		return str;
 	}
 }
 
