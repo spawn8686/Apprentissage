@@ -5,20 +5,22 @@ import com.sdz.statiquesInterfaces.interfaces.Reproduction;
 
 public abstract class Especes
 {	
+	String espece = "Humain";
 	Reproduction reproduction = new MiseBas();
 	
 	// Constructeur
 	public Especes()
 	{
-		System.out.println("\nPar defaut, je suis un humain"+
-				"\nnaissance = "+reproduction.getClass().getSimpleName()+
+		System.out.println("\nPar defaut, je suis un '"+espece+
+				"'\nnaissance = "+reproduction.getClass().getSimpleName()+
 				"\n----------------------------------------");
 	}
 	public Especes(String espece, Reproduction rep)
 	{
+		this.espece = espece;
 		this.reproduction = rep;
-		System.out.println("Je suis un(e) = "+espece+
-				"\nnaissance = "+reproduction.getClass().getSimpleName());
+		System.out.println("Je suis un(e) = '"+espece+
+				"'\nnaissance = "+reproduction.getClass().getSimpleName());
 	}
 	
 	//Méthodes
