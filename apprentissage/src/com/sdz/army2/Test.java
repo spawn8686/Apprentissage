@@ -2,8 +2,7 @@ package com.sdz.army2;
 
 import com.sdz.army2.comportements.*;
 import com.sdz.army2.personnages.*;
-
-import exercices.Titre;
+import com.sdz.exercices.Titre;
 
 public class Test 
 {

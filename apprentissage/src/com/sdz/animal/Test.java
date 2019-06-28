@@ -1,6 +1,6 @@
 package com.sdz.animal;
 
-import exercices.Titre;
+import com.sdz.exercices.Titre;
 
 public class Test 
 {
