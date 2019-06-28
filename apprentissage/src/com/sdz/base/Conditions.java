@@ -1,4 +1,4 @@
-package openClassRoom_1;
+package com.sdz.base;
 
 public class Conditions 
 {

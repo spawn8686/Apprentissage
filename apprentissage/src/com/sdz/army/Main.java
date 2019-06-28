@@ -1,8 +1,8 @@
 package com.sdz.army;
 
-import exercices.Titre;
+import com.sdz.exercices.Titre;
 
-public class Test {
+public class Main {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) 

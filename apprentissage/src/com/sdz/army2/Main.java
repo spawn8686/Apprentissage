@@ -2,10 +2,9 @@ package com.sdz.army2;
 
 import com.sdz.army2.comportements.*;
 import com.sdz.army2.personnages.*;
+import com.sdz.exercices.Titre;
 
-import exercices.Titre;
-
-public class Test 
+public class Main 
 {
 	public static void main(String[] args) 
 	{

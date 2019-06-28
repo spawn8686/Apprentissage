@@ -1,0 +1,31 @@
+9
+Paris 20 250
+Hambourg 100 50
+Amsterdam 150 250
+Londres 100  450
+Stockholm 350 50
+Berlin 250 150
+Edimbourg 300 450
+Oslo 350 250
+Rana 450 250
+
+Paris 
+
+Amsterdam Hambourg 2
+Amsterdam Londres 1
+Amsterdam Oslo 8
+Berlin Amsterdam 2
+Berlin Oslo 3
+Berlin Stockholm 2
+Hambourg Berlin 1
+Hambourg Stockholm 1
+Edimbourg Amsterdam 3
+Edimbourg Oslo 7
+Edimbourg Rana 6
+Londres Edimbourg 2
+Paris Amsterdam 3
+Paris Hambourg 7
+Paris Londres 4
+Oslo Rana 2
+Stockholm Oslo 2
+Stockholm Rana 5

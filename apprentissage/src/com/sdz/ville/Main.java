@@ -1,4 +1,4 @@
-package openClassRoom_2;
+package com.sdz.ville;
 
 public class Main 
 {

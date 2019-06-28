@@ -1,4 +1,4 @@
-package openClassRoom_1;
+package com.sdz.base;
 
 import java.util.Scanner;
 
@@ -83,7 +83,8 @@ public class Entrees
 	    System.out.println("Saisissez une chaîne : ");
 	    //On vide la ligne avant d'en lire une autre
 	    scan2.nextLine();
-	    String mot4 = scan2.nextLine();      
+	    String mot4 = scan2.nextLine();  
+	    System.out.println("Vous avez écris => '"+mot4+"'");
 	    System.out.println("FIN ! ");
 	}
 }
