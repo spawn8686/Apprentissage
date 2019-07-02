@@ -28,7 +28,8 @@ public class Ville
 		System.out.println("Création d'une ville fantome\n");
 	}	
 	// Surcharge de constructeur de la class Ville avec paramètre
-	public Ville(String pVille, String pPays, int pNbr)
+	public Ville(String pVille, String pPays, int pNbr) 
+	throws NbrHabitantsExceptions
 	{
 		nomVille = pVille;
 		nomPays = pPays;
@@ -36,10 +37,16 @@ public class Ville
 		nbrInstances++;
 		nbrInstancesBis++;
 		
-		this.setCategorie();
-		System.out.println("\nCréation de "+pVille+"!");
-		System.out.println(pVille+" ce trouve en "+pPays+" et est composé d'environ "+pNbr+" habitants, ce qui la place dans la catégorie => "
-							+this.categorie+"\n");
+		if (nbreHabitants < 0) 
+		{
+			throw new NbrHabitantsExceptions();
+		}else
+		{		
+			this.setCategorie();
+			System.out.println("\nCréation de "+pVille+"!");
+			System.out.println(pVille+" ce trouve en "+pPays+" et est composé d'environ "+pNbr+" habitants, ce qui la place dans la catégorie => "
+								+this.categorie+"\n");
+		}
 	}	
 	
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
