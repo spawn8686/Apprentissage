@@ -5,7 +5,7 @@ public class Main
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) 
-	throws NbrHabitantsExceptions 
+	throws NbrHabitantsExceptions, NomVilleException
 	{
 		//Instanciation de la class Ville avec constructeur par defaut
 		Ville ville = new Ville();

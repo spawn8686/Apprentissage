@@ -29,7 +29,7 @@ public class Ville
 	}	
 	// Surcharge de constructeur de la class Ville avec paramètre
 	public Ville(String pVille, String pPays, int pNbr) 
-	throws NbrHabitantsExceptions
+	throws NbrHabitantsExceptions, NomVilleException
 	{
 		nomVille = pVille;
 		nomPays = pPays;
@@ -38,9 +38,10 @@ public class Ville
 		nbrInstancesBis++;
 		
 		if (nbreHabitants < 0) 
-		{
-			throw new NbrHabitantsExceptions();
-		}else
+			throw new NbrHabitantsExceptions("Nombre d'habitants impossible => '"+pNbr+"'");
+		if (pVille.length() < 3)
+			throw new NomVilleException("Le nom de votre ville fais moin de 3 caractères = > ' "+pVille+" '");
+		else
 		{		
 			this.setCategorie();
 			System.out.println("\nCréation de "+pVille+"!");

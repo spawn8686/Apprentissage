@@ -18,7 +18,7 @@ public class Titre
 		    System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
 		}else
 		{
-		    System.out.println("\n\t"+text+"\n");
+		    System.out.println("\n\t"+text);
 		}
 	}
 }

@@ -6,9 +6,35 @@ class NbrHabitantsExceptions extends Exception
 {
 	Titre titre = new Titre();
 	
-	public NbrHabitantsExceptions()
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	//									CONSTRUCTEUR
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	public NbrHabitantsExceptions(String message)
 	{
-		titre.titre("ERREUR\n"+
-					"\tUne ville ne peut pas avoir un nombre négatif d'habitants");
+		super(message);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
