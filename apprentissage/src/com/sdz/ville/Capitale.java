@@ -15,7 +15,8 @@ public class Capitale extends Ville
 		super();
 		monument = "aucun";
 	}
-	public Capitale(String pVille, String pPays, int pNbr, String monument)
+	public Capitale(String pVille, String pPays, int pNbr, String monument) 
+	throws NbrHabitantsExceptions, NomVilleException
 	{
 		super(pVille, pPays, pNbr);
 		this.monument = monument;
