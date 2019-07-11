@@ -21,6 +21,7 @@ public class Arborescence implements Graphique {
 		dijkstra();
 	}
 
+	@SuppressWarnings("resource")
 	public void lireFichier(String nom) throws IOException {
 		File fichier = new File(nom);
 		Scanner lecteur = new Scanner(fichier);
@@ -52,6 +53,7 @@ public class Arborescence implements Graphique {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public void dijkstra() {
 		Sommet extremite, sommetChoisi;
 		boolean fini = false;

@@ -1,5 +1,6 @@
 package com.sdz.ville;
 
+@SuppressWarnings("serial")
 class NomVilleException extends Exception 
 {
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

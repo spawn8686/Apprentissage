@@ -19,9 +19,9 @@ class Main {
 		BigInteger C = nbr1.divide(C0);
 		BigInteger E0 = nbr5.multiply(nbr6);
 		BigInteger E = nbr4.divide(E0);
-		BigInteger R = C.multiply(E);
+		BigInteger Result = C.multiply(E);
 		
-		System.out.println("le nombre de possibilité pour l'EuroMillion est de \""+R+"\"");
+		System.out.println("le nombre de possibilité pour l'EuroMillion est de \""+Result+"\"");
 	}
 
 }
