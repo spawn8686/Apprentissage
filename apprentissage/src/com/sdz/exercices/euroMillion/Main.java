@@ -22,6 +22,7 @@ class Main {
 		BigInteger Result = C.multiply(E);
 		
 		System.out.println("le nombre de possibilité pour l'EuroMillion est de \""+Result+"\"");
+		System.out.println(facto.facteur(7));
 	}
 
 }
