@@ -76,7 +76,7 @@ class Factorielle
 	public void fullCombinaison(String str, Integer grille1, Integer choix1, Integer grille2, Integer choix2)
 	throws NameJeuxException, ValueGrilleException
 	{
-		if (str instanceof String)
+		if (str instanceof String) // totalement inutile, juste pour l'exercice de l'utilisation de 2 class d'exception
 		{
 			if (grille1 instanceof Integer && grille1 > 0 && choix1 instanceof Integer && choix1 > 0 && grille1 > choix1) // test des valeurs de la première grille
 			{
