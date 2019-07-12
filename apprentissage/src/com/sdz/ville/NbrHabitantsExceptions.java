@@ -1,6 +1,6 @@
 package com.sdz.ville;
 
-import com.sdz.exercices.Titre;
+import com.prive.exercices.Titre;
 
 @SuppressWarnings("serial")
 class NbrHabitantsExceptions extends Exception 

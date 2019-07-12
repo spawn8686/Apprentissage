@@ -1,4 +1,4 @@
-package com.sdz.exercices.dijkstra;
+package com.prive.exercices.dijkstra;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

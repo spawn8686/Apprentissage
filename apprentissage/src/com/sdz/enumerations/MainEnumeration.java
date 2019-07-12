@@ -1,6 +1,6 @@
 package com.sdz.enumerations;
 
-import com.sdz.exercices.Titre;
+import com.prive.exercices.Titre;
 
 class MainEnumeration 
 {

@@ -1,4 +1,4 @@
-package com.sdz.exercices;
+package com.prive.exercices;
 
 import java.util.Scanner;
 

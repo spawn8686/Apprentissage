@@ -1,4 +1,4 @@
-package com.sdz.exercices.euroMillion;
+package com.prive.exercices.euroMillion;
 
 import java.math.BigInteger;
 

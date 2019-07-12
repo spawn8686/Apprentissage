@@ -1,8 +1,8 @@
 package com.sdz.army2;
 
+import com.prive.exercices.Titre;
 import com.sdz.army2.comportements.*;
 import com.sdz.army2.personnages.*;
-import com.sdz.exercices.Titre;
 
 public class Main 
 {

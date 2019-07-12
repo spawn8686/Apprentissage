@@ -1,6 +1,6 @@
 package com.sdz.army;
 
-import com.sdz.exercices.Titre;
+import com.prive.exercices.Titre;
 
 public class Main {
 
