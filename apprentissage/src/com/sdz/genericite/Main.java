@@ -1,5 +1,7 @@
 package com.sdz.genericite;
 
+import java.util.*;
+
 import com.prive.exercices.Titre;
 
 public class Main 
@@ -62,6 +64,70 @@ public class Main
 		//							Généricité à 2 paramètres
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		ti.titre("Généricité à 2 paramètres");
+		
+		Duo<String, Boolean> dual = new Duo<>("toto", true);
+		System.out.println("Valeur de l'objet dual : val1 = " + dual.getValue1() + ", val2 = " + dual.getValue2());
+		                
+		Duo<Double, Character> dual2 = new Duo<>(12.2585, 'C');
+		System.out.println("Valeur de l'objet dual2 : val1 = " + dual2.getValue1() + ", val2 = " + dual2.getValue2());
+		  
+		  
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		//							Généricité et collection d'objets
+		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		ti.titre("La Généricité et les collections d'Objets");
+		
+		System.out.println("Liste de String");
+		System.out.println("------------------------------");
+		List<String> listeString= new ArrayList<String>();
+		listeString.add("Une chaîne");
+		listeString.add("Une autre");
+		listeString.add("Encore une autre");
+		listeString.add("Allez, une dernière");
+		
+		for(String str2: listeString)
+			System.out.println(str2);
+
+		System.out.println("\nListe de float");
+		System.out.println("------------------------------");
+		                
+		List<Float> listeFloat = new ArrayList<Float>();
+		listeFloat.add(12.25f);
+		listeFloat.add(15.25f);
+		listeFloat.add(2.25f);
+		listeFloat.add(128764.25f);
+		                
+		for(float f2 : listeFloat)
+		  System.out.println(f2);
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
