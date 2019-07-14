@@ -76,9 +76,8 @@ public class Main
 		//							Généricité et collection d'objets
 		//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		ti.titre("La Généricité et les collections d'Objets");
-		
-		System.out.println("Liste de String");
-		System.out.println("------------------------------");
+
+		ti.titre("Liste de String", false);
 		List<String> listeString= new ArrayList<String>();
 		listeString.add("Une chaîne");
 		listeString.add("Une autre");
@@ -88,8 +87,7 @@ public class Main
 		for(String str2: listeString)
 			System.out.println(str2);
 
-		System.out.println("\nListe de float");
-		System.out.println("------------------------------");
+		ti.titre("Liste de float", false);
 		                
 		List<Float> listeFloat = new ArrayList<Float>();
 		listeFloat.add(12.25f);
